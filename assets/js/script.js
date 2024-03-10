@@ -23,6 +23,26 @@ const charData = {
     desc: "Ichigo’s good friend since middle school. He is one-quarter Mexican. His friends call him “Chad.” As a child, he often resorted to violence until his grandfather set him straight. Since then, he has refrained from using his strength for selfish reasons. Accompanies Ichigo with the promise he made to him.",
     color: "#1fd647",
   },
+  urahara: {
+    name: "Kisuke Urahara",
+    desc: "Once Captain of the Squad 12 and the first chief of the Department of Research and Development. Currently runs a penny candy store called “Urahara’s Shop,” and provides various supplies to Soul Reapers. Supports Ichigo in many ways as he grows as a Soul Reaper.",
+    color: "#5d7261",
+  },
+  yamamoto: {
+    name: "Shigekuni Genryusai Yamamoto",
+    desc: "Head Captain of the Thirteen Court Guard Squads and captain of Squad 1. Founder of the Thirteen Court Guard Squads and the highest-ranking of all Soul Reapers. Despite his advanced age, he has trained his body to its limits and boasts overwhelming combat power. Shunsui Kyoraku and Jushiro Ukitake are among his former protégés.",
+    color: "#ee522b",
+  },
+  aizen: {
+    name: "Sosuke Aizen",
+    desc: "Once captain of Squad 5 of the Thirteen Court Guard Squads. Responsible for the turmoil involving the Soul Society and Hueco Mundo. Sealed following a battle with the Soul Reapers and Ichigo. Currently imprisoned in the Central Underground Great Prison “Muken.”",
+    color: "#4b13b3",
+  },
+  yhwach: {
+    name: "Yhwach",
+    desc: "Founder of the Quincies and leader of the “Wandenreich.” Addressed as“His Majesty.” Cold and merciless to his followers and does not hesitate to take their lives on the spot.",
+    color: "#1538ff",
+  },
 };
 
 window.addEventListener("load", function () {
