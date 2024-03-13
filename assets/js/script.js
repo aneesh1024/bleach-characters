@@ -60,11 +60,13 @@ const CharName = document.querySelector(".char-name span");
 const CharDesc = document.getElementsByClassName("char-desc")[0];
 const CharImage = document.getElementsByClassName("char-image")[0];
 const BarEffect = document.querySelector(".char-details > .bar-effect");
+const audio = new Audio("/assets/audio/aizen.mp3");
 
 closeBtn.addEventListener("click", () => {
   CharDetails.classList.add("close");
   const newUrl = window.location.href.split("?")[0];
   window.history.pushState({ path: newUrl }, "", newUrl);
+  audio.pause();
   setTimeout(() => {
     CharDetails.style.display = "none";
   }, 500);
@@ -93,4 +95,9 @@ function showDetails() {
   setTimeout(() => {
     CharDetails.classList.remove("close");
   }, 500);
+  audio.currentTime = 1;
+  audio.src = `/assets/audio/${char}.mp3`;
+  setTimeout(() => {
+    audio.play();
+  }, 700);
 }
